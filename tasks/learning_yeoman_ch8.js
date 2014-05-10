@@ -64,5 +64,4 @@ module.exports = function (grunt) {
 
 	};
 	grunt.registerMultiTask( 'learning_yeoman_ch8', 'This is an example plugin.', LearningYeomanCh8 );
->>>>>>> 647bcb4d059a50701f41c19aa8b399170d2ad65d
 };
