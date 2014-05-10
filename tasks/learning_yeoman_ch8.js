@@ -4,7 +4,7 @@
  *
  * Copyright (c) 2014 Jonnie Spratley
  * Licensed under the MIT license.
-*/
+ */
 'use strict';
 module.exports = function (grunt) {
 
@@ -18,8 +18,10 @@ module.exports = function (grunt) {
 		 * I merge task-specific and/or target-specific options with these defaults.
 		 */
 		var options = this.options( {
-			punctuation: '.',
-			separator: ', '
+			template: 'Hello <%= name %>',
+			data: {
+				name: 'Learning Yeoman'
+			}
 		} );
 
 		/**
@@ -44,8 +46,8 @@ module.exports = function (grunt) {
 		var readSource = function (file) {
 			return file.src.filter( checkFiles ).map( function (filepath) {
 				return grunt.file.read( filepath );
-			} ).join( grunt.util.normalizelf( options.separator ) );
-		}
+			} ).join( grunt.util.normalizelf( '' ) );
+		};
 
 		/**
 		 * I handle reading and writing a file with the passed in options template.
@@ -53,7 +55,11 @@ module.exports = function (grunt) {
 		 */
 		var readWriteFile = function (file) {
 			var src = readSource( file );
-					src += options.punctuation;
+			var content = grunt.template.process( options.template, {data: options.data} );
+
+			console.log(content);
+
+			src += content;
 
 			grunt.file.write( file.dest, src );
 			grunt.log.writeln( 'File "' + file.dest + '" created.' );
@@ -62,6 +68,6 @@ module.exports = function (grunt) {
 		// Iterate over all specified file groups.
 		this.files.forEach( readWriteFile );
 
-	};
+	}
 	grunt.registerMultiTask( 'learning_yeoman_ch8', 'This is an example plugin.', LearningYeomanCh8 );
 };

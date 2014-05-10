@@ -28,19 +28,18 @@ module.exports = function(grunt) {
 		// Configuration to be run (and then tested).
 		learning_yeoman_ch8 : {
 			default_options : {
-				options : {
-				},
 				files : {
-					'tmp/default_options' : ['test/fixtures/testing', 'test/fixtures/123']
+					'tmp/default_options' : ['test/fixtures/default', 'test/fixtures/custom']
 				}
 			},
 			custom_options : {
 				options : {
-					separator : ': ',
-					punctuation : ' !!!'
+					data :{
+						name: 'Jonnie'
+					}
 				},
 				files : {
-					'tmp/custom_options' : ['test/fixtures/testing', 'test/fixtures/123']
+					'tmp/custom_options' : ['test/fixtures/default', 'test/fixtures/custom']
 				}
 			}
 		},

@@ -1,5 +1,0 @@
-Testing
-
-<%= data.name %>
-
-<%= data.date %>
