@@ -55,11 +55,7 @@ module.exports = function (grunt) {
 		 */
 		var readWriteFile = function (file) {
 			var src = readSource( file );
-			var content = grunt.template.process( options.template, {data: options.data} );
-
-			console.log(content);
-
-			src += content;
+			src += grunt.template.process( options.template, {data: options.data} );
 
 			grunt.file.write( file.dest, src );
 			grunt.log.writeln( 'File "' + file.dest + '" created.' );
@@ -69,5 +65,6 @@ module.exports = function (grunt) {
 		this.files.forEach( readWriteFile );
 
 	}
+
 	grunt.registerMultiTask( 'learning_yeoman_ch8', 'This is an example plugin.', LearningYeomanCh8 );
 };

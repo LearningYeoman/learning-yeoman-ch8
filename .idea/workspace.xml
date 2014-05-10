@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce459b82-ddda-4d9a-80f3-b11fd1eb9ba8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/custom" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/default" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/123" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fixtures/testing" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/expected/custom_options" afterPath="$PROJECT_DIR$/test/expected/custom_options" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/expected/default_options" afterPath="$PROJECT_DIR$/test/expected/default_options" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/learning_yeoman_ch8.js" afterPath="$PROJECT_DIR$/tasks/learning_yeoman_ch8.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/learning_yeoman_ch8_test.js" afterPath="$PROJECT_DIR$/test/learning_yeoman_ch8_test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="learning-yeoman-ch8.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gruntfile.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gruntfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65172416" vertical-offset="147" max-vertical-offset="1050">
-              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1050">
+              <caret line="34" column="12" selection-start-line="27" selection-start-column="2" selection-end-line="34" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -94,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="learning_yeoman_ch8.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="learning_yeoman_ch8.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tasks/learning_yeoman_ch8.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="1095">
-              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.79310346" vertical-offset="425" max-vertical-offset="1050">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,8 +145,8 @@
         <option value="$PROJECT_DIR$/test/fixtures/default" />
         <option value="$PROJECT_DIR$/test/learning_yeoman_ch8_test.js" />
         <option value="$PROJECT_DIR$/test/expected/default_options" />
-        <option value="$PROJECT_DIR$/tasks/learning_yeoman_ch8.js" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/tasks/learning_yeoman_ch8.js" />
       </list>
     </option>
   </component>
@@ -325,13 +316,13 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="56" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="61" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="63" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="62" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="65" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="678" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="674" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="61" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
@@ -562,18 +553,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/learning_yeoman_ch8.js">
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="1095">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="147" max-vertical-offset="1050">
+          <caret line="34" column="12" selection-start-line="27" selection-start-column="2" selection-end-line="34" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+    <entry file="file://$PROJECT_DIR$/tasks/learning_yeoman_ch8.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65172416" vertical-offset="147" max-vertical-offset="1050">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.79310346" vertical-offset="425" max-vertical-offset="1050">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
