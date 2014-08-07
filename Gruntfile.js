@@ -33,11 +33,15 @@ module.exports = function (grunt) {
 
     // Configuration to be run (and then tested).
     learning_yeoman_ch8: {
+      
+      //Default options sent to task
       default_options: {
         files: {
           'tmp/default_options': ['test/fixtures/default', 'test/fixtures/custom']
         }
       },
+      
+      //Custom options, it will find and replace <%= data.name %> with the value specified below.
       custom_options: {
         options: {
           data: {
