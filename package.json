@@ -29,6 +29,7 @@
     "load-grunt-tasks": "~0.3.0"
   },
   "scripts": {
+    "start" : "grunt",
     "test": "grunt test"
   }
 }
