@@ -41,7 +41,7 @@ module.exports = function (grunt) {
         }
       },
       
-      //Custom options, it will find and replace <%= data.name %> with the value specified below.
+      //Custom options, it will find and replace <%= name %> with the value specified below.
       custom_options: {
         options: {
           data: {
