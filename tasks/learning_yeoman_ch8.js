@@ -5,51 +5,50 @@
  * Copyright (c) 2014 Jonnie Spratley
  * Licensed under the MIT license.
  */'use strict';
-
 module.exports = function(grunt) {
+	function LearningYeomanCh8() {
 
-	// Please see the Grunt documentation for more information regarding task
-	// creation: http://gruntjs.com/creating-tasks
-
-	grunt.registerMultiTask('learning_yeoman_ch8', 'This is an example plugin.', function() {
-
-		// Merge task-specific and/or target-specific options with these defaults.
+		//Default options
 		var options = this.options({
-			punctuation : '.',
-			separator : ', ',
-			template: '',
+			template: 'Hello <%= name %>',
 			data: {
-				name: 'Jonnie'
+				name: 'Learning Yeoman'
 			}
 		});
 
+		//Handle checking source files
+		var checkFiles = function(filepath) {
+			if (!grunt.file.exists(filepath)) {
+				grunt.log.warn('Source file "' + filepath + '" not found.');
+				return false;
+			}
+			else {
+				return true;
+			}
+		};
+
+		//Handle reading source files
+		var readSource = function(file) {
+			return file.src.filter(checkFiles).map(function(filepath) {
+				return grunt.file.read(filepath);
+			}).join(grunt.util.normalizelf(''));
+		};
+
+		//Handle reading and writing file
+		var readWriteFile = function(file) {
+			var src = readSource(file);
+			src += grunt.template.process(
+			options.template, {
+				data: options.data
+			});
+			grunt.file.write(file.dest, src);
+			grunt.log.writeln('File "' + file.dest + '" created.');
+		};
+
 		// Iterate over all specified file groups.
 		this.files.forEach(function(file) {
-			// Concat specified files.
-			var src = file.src.filter(function(filepath) {
-				// Warn on and remove invalid source files (if nonull was set).
-				if(!grunt.file.exists(filepath)) {
-					grunt.log.warn('Source file "' + filepath + '" not found.');
-					return false;
-				} else {
-					return true;
-				}
-			}).map(function(filepath) {
-				// Read file source.
-				
-				
-				grunt.log.ok('Filepath "' + filepath + '" .');
-				return grunt.file.read(filepath);
-			}).join(grunt.util.normalizelf(options.separator));
-
-			// Handle options.
-			src += options.template;
-
-			// Write the destination file.
-			grunt.file.write(file.dest, src);
-
-			// Print a success message.
-			grunt.log.writeln('File "' + file.dest + '" created.');
+			readWriteFile(file);
 		});
-	});
+	}
+	grunt.registerMultiTask('learning_yeoman_ch8', 'This is an example plugin.', LearningYeomanCh8);
 };
